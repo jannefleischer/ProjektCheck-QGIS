@@ -25,15 +25,15 @@ from qgis.PyQt.QtCore import QSettings, QTranslator, qVersion, QCoreApplication,
 from qgis.PyQt.QtGui import QIcon, QPixmap, QPalette, QBrush
 from qgis.PyQt.QtWidgets import QAction, QMenu
 # Initialize Qt resources from file resources_rc.py
-from resources_rc import *
+from pctools.ui.resources_rc import *
 
 # Import the code for the DockWidget
-from ProjektCheck_dockwidget import ProjektCheckDockWidget
-from ProjektCheck_drawwidget import ProjektCheckDrawWidget
-from toolbutton_dock import ToolbuttonWidget
-from testdialog import TestDialog
+from pctools.ui.ProjektCheck_dockwidget import ProjektCheckDockWidget
+from pctools.ui.ProjektCheck_drawwidget import ProjektCheckDrawWidget
+from pctools.ui.toolbutton_dock import ToolbuttonWidget
+from pctools.ui.testdialog import TestDialog
 
-from tools.definitions.projektverwaltung.projektverwaltung import Projektverwaltung
+from pctools.definitions.projektverwaltung.projektverwaltung import Projektverwaltung
 import os.path
 
 
