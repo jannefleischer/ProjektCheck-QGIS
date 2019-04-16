@@ -1,4 +1,4 @@
-call "C:\Program Files\QGIS 3.6\bin\o4w_env.bat"
+call "C:\Program Files\QGIS 3.4\bin\o4w_env.bat"
 @ECHO ON
 call py3_env
 where python

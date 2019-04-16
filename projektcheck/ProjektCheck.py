@@ -21,17 +21,19 @@
  *                                                                         *
  ***************************************************************************/
 """
-from PyQt5.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, Qt
-from PyQt5.QtGui import QIcon, QPixmap, QPalette, QBrush
-from PyQt5.QtWidgets import QAction, QMenu
+from qgis.PyQt.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, Qt
+from qgis.PyQt.QtGui import QIcon, QPixmap, QPalette, QBrush
+from qgis.PyQt.QtWidgets import QAction, QMenu
 # Initialize Qt resources from file resources_rc.py
-from .resources_rc import *
+from resources_rc import *
 
 # Import the code for the DockWidget
-from .ProjektCheck_dockwidget import ProjektCheckDockWidget
-from .ProjektCheck_drawwidget import ProjektCheckDrawWidget
-from .toolbutton_dock import ToolbuttonWidget
-from .testdialog import TestDialog
+from ProjektCheck_dockwidget import ProjektCheckDockWidget
+from ProjektCheck_drawwidget import ProjektCheckDrawWidget
+from toolbutton_dock import ToolbuttonWidget
+from testdialog import TestDialog
+
+from tools.definitions.projektverwaltung.projektverwaltung import Projektverwaltung
 import os.path
 
 
@@ -296,3 +298,6 @@ class ProjektCheck:
         self.iface.addDockWidget(Qt.RightDockWidgetArea, self.drawwidget)
         self.drawwidget.show()
 
+if __name__ == '__main__':
+    print()
+    pass
